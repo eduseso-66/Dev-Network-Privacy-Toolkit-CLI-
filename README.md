@@ -1,2 +1,114 @@
 # Dev-Network-Privacy-Toolkit-CLI-
-ross-platform CLI tool designed for developers who need to test applications under different network conditions using local proxy configurations and Tor verification.
+Cross-platform CLI tool designed for developers who need to test applications under different network conditions using local proxy configurations and Tor verification.
+
+Built for controlled development and testing environments only.
+
+
+## ✨ Features
+
+- Detects operating system automatically (Windows / Linux / macOS)
+- Verifies if Tor process is running
+- Detects active SOCKS port (9050 / 9150)
+- Validates real Tor network connection
+- Activates / deactivates proxy environment variables
+- Retrieves public IP
+- Logs activity to file
+- Modular architecture for scalability
+
+
+
+## 🧠 Project Architecture
+dev-privacy-toolkit/
+├── main.py
+├── core/
+│ ├── os_detector.py
+│ ├── proxy_manager.py
+│ ├── network_check.py
+│ ├── tor_detector.py
+│ └── logger.py
+├── config/
+│ └── settings.json
+├── logs/
+├── requirements.txt
+
+
+The project follows a modular design to allow easy expansion into a full development toolkit.
+
+---
+
+## ⚙️ Installation
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/yourusername/dev-network-privacy-toolkit.git
+cd dev-network-privacy-toolkit
+
+```
+### 2️⃣ Create virtual environment
+```bash
+python -m venv venv
+```
+Activate in Linux/MacOS
+```bash
+source venv/bin/activate
+```
+Activate in Windows
+```bash
+venv\Scripts\activate
+```
+### 3️⃣ Install dependencies
+```bash
+pip install -r requirements.txt
+```
+▶️ Usage
+```bash
+python main.py
+```
+
+The tool will:
+
+Detect OS
+
+Show current public IP
+
+Check Tor status
+
+Allow proxy activation/deactivation
+
+### 📌 Requirements
+
+Python 3.9+
+
+Tor installed (if Tor verification is required)
+
+### ⚠️ Disclaimer
+
+This project is intended strictly for development testing, educational purposes, and controlled environments.
+It is not designed to bypass services, evade restrictions, or perform unauthorized activities.
+
+## 🔧 Installing Tor
+
+This tool can verify Tor connectivity if Tor is running locally.
+
+### Linux (Debian/Ubuntu-based)
+
+```bash
+sudo apt update
+sudo apt install tor
+sudo systemctl start tor
+```
+Default SOCKS port: 9050
+
+## Windows
+
+Download Tor Browser from:
+https://www.torproject.org/download/
+
+Launch Tor Browser once to start the local SOCKS proxy (usually port 9150).
+
+## Verify Tor is running
+```bash
+sudo systemctl status tor
+```
+Tor is not required for basic proxy environment testing, but it is necessary for full Tor network verification.
