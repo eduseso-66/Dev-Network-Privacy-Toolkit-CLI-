@@ -17,21 +17,6 @@ Built for controlled development and testing environments only.
 
 
 
-## 🧠 Project Architecture
-dev-privacy-toolkit/
-├── main.py
-├── core/
-│ ├── os_detector.py
-│ ├── proxy_manager.py
-│ ├── network_check.py
-│ ├── tor_detector.py
-│ └── logger.py
-├── config/
-│ └── settings.json
-├── logs/
-├── requirements.txt
-
-
 The project follows a modular design to allow easy expansion into a full development toolkit.
 
 ---
@@ -61,12 +46,12 @@ venv\Scripts\activate
 ```bash
 pip install -r requirements.txt
 ```
-▶️ Usage
+### ▶️ Usage
 ```bash
 python main.py
 ```
 
-The tool will:
+## The tool will:
 
 Detect OS
 
@@ -82,10 +67,12 @@ Python 3.9+
 
 Tor installed (if Tor verification is required)
 
+
 ### ⚠️ Disclaimer
 
 This project is intended strictly for development testing, educational purposes, and controlled environments.
 It is not designed to bypass services, evade restrictions, or perform unauthorized activities.
+
 
 ## 🔧 Installing Tor
 
@@ -94,13 +81,14 @@ This tool can verify Tor connectivity if Tor is running locally.
 ### Linux (Debian/Ubuntu-based)
 
 ```bash
-sudo apt update
+sudo apt update && upgrade
 sudo apt install tor
 sudo systemctl start tor
 ```
 Default SOCKS port: 9050
 
-## Windows
+
+### Windows
 
 Download Tor Browser from:
 https://www.torproject.org/download/
