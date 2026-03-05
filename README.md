@@ -3,6 +3,8 @@ Cross-platform CLI tool designed for developers who need to test applications un
 
 Built for controlled development and testing environments only.
 
+![animacion](https://tenor.com/b2e51.gif)
+
 
 ## ✨ Features
 
