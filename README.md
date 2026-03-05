@@ -89,6 +89,8 @@ sudo systemctl start tor
 ```
 Default SOCKS port: 9050
 
+![animation](<img width="112" height="112" alt="imagen" src="https://github.com/user-attachments/assets/640803e9-0ebb-4699-a353-8d15bd6e3ca1" />
+)
 
 ### Windows
 
