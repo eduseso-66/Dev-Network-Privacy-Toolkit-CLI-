@@ -6,7 +6,7 @@ Built for controlled development and testing environments only.
 ![animacion](https://tenor.com/b2e51.gif)
 
 
-## ✨ Features
+##  Features
 
 - Detects operating system automatically (Windows / Linux / macOS)
 - Verifies if Tor process is running
@@ -25,14 +25,14 @@ The project follows a modular design to allow easy expansion into a full develop
 
 ## ⚙️ Installation
 
-### 1️⃣ Clone the repository
+###  Clone the repository
 
 ```bash
 git clone https://github.com/yourusername/dev-network-privacy-toolkit.git
 cd dev-network-privacy-toolkit
 
 ```
-### 2️⃣ Create virtual environment
+###  Create virtual environment
 ```bash
 python -m venv venv
 ```
@@ -44,7 +44,7 @@ Activate in Windows
 ```bash
 venv\Scripts\activate
 ```
-### 3️⃣ Install dependencies
+###  Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
@@ -63,7 +63,7 @@ Check Tor status
 
 Allow proxy activation/deactivation
 
-### 📌 Requirements
+###  Requirements
 
 Python 3.9+
 
